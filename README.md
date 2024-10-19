@@ -1,3 +1,6 @@
+# Repo qrcode
+<image alt="qr code" src="./qrcode.png">
+
 # Prerequisite
 - Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Install browser [chrome](https://www.google.com/intl/en_uk/chrome/dr/download/?brand=WHAR&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL740lfzwMDG4kfitqPF9CtceNiXHTZoE3tKaEumDhDZdxwyCx4_uuRoCJUsQAvD_BwE&gclsrc=aw.ds)
