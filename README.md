@@ -32,3 +32,25 @@ Example
 <span title="tool tip">Hello world</span>
 ```
 
+## Visualization of the structure of the HTML 5 page
+<div style="border: 1px solid; padding: 10px;">
+    &lt;html&gt;
+    <div style="border: 1px solid; padding: 10px; margin: 10px;">
+        &lt;head&gt;
+          <div style="border: 1px solid; padding: 10px; margin: 10px;">
+            &lt;title&gt;Page title &lt;&sol;title&gt;
+        </div>
+    </div>
+    <div style="border: 1px solid; padding: 10px; margin: 10px;">
+        &lt;body&gt;
+        <h1 style="border: 1px solid; padding: 10px; margin: 10px;">
+            &lt;h1&gt;This is a heading 1&lt;&sol;h1&gt;
+        </h1>
+        <h2 style="border: 1px solid; padding: 10px; margin: 10px;">
+            &lt;h1&gt;This is a heading2&lt;&sol;h1&gt;
+        </h2>
+        <p title="paragraph" style="border: 1px solid; padding: 10px; margin: 10px;">
+            &lt;p&nbsp;title&equals;&quot;paragraph&quot;&gt;This is a paragraph&lt;&sol;p&gt;
+        </p>
+    </div>
+</div>
