@@ -85,3 +85,19 @@ Form elements
 <button></button>
 ```
 
+## Lab
+- cd into directory
+```bash 
+cd ./html/lab
+```
+- create index.html
+```bash
+touch lab1.html
+```
+- open fiile in vscode
+```bash
+code ./lab2.html
+```
+
+### Lab 1
+Can you strucutre a personal card in html using div and spans? Make sure it includes image, name, university, course, skills, email, location
