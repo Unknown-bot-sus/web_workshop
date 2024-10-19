@@ -58,3 +58,30 @@ Example
     </div>
     &lt;&sol;html&gt;
 </div>
+
+## Some Html 5 elements
+```html
+<h1>Heading 1</h1>
+...
+<h6>Heading 6</h6>
+<a>Anchor tag</a>
+<br/>
+<hr />
+<p>This is a paragraph</p>
+
+Generic elements
+<div></div>
+<span></span>
+
+Form elements
+<form></form>
+<input />
+<select>
+    <option></option>
+    <option></option>
+    <option></option>
+</select>
+<label>
+<button></button>
+```
+
