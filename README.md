@@ -1,5 +1,3 @@
-<image>
-
 # Prerequisite
 - Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Install browser [chrome](https://www.google.com/intl/en_uk/chrome/dr/download/?brand=WHAR&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL740lfzwMDG4kfitqPF9CtceNiXHTZoE3tKaEumDhDZdxwyCx4_uuRoCJUsQAvD_BwE&gclsrc=aw.ds)
@@ -37,9 +35,10 @@ Example
     &lt;html&gt;
     <div style="border: 1px solid; padding: 10px; margin: 10px;">
         &lt;head&gt;
-          <div style="border: 1px solid; padding: 10px; margin: 10px;">
+        <div style="border: 1px solid; padding: 10px; margin: 10px;">
             &lt;title&gt;Page title &lt;&sol;title&gt;
         </div>
+        &lt;&sol;head&gt;
     </div>
     <div style="border: 1px solid; padding: 10px; margin: 10px;">
         &lt;body&gt;
@@ -47,10 +46,12 @@ Example
             &lt;h1&gt;This is a heading 1&lt;&sol;h1&gt;
         </h1>
         <h2 style="border: 1px solid; padding: 10px; margin: 10px;">
-            &lt;h1&gt;This is a heading2&lt;&sol;h1&gt;
+            &lt;h2&gt;This is a heading2&lt;&sol;h2&gt;
         </h2>
         <p title="paragraph" style="border: 1px solid; padding: 10px; margin: 10px;">
             &lt;p&nbsp;title&equals;&quot;paragraph&quot;&gt;This is a paragraph&lt;&sol;p&gt;
         </p>
+        &lt;&sol;body&gt;
     </div>
+    &lt;&sol;html&gt;
 </div>
