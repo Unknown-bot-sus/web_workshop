@@ -146,3 +146,34 @@ span {
 }
 ```
 
+## CSS selectors
+A CSS selector selects the HTML element(s) you want to style.
+
+- [Simple selectors](#simple-selectors) (select elements based on name, id, class)
+- [Combinator selectors](#combinator-selectors) (select elements based on a specific relationship between them)
+- [Pseudo-class selectors](#pseudo-class-selectors) (select elements based on a certain state)
+- [Pseudo-elements selectors](https://www.w3schools.com/css/css_pseudo_elements.asp) (select and style a part of an element)
+- [Attribute selectors](#attribute-selectors) (select elements based on an attribute or attribute value)
+
+
+### Simple selectors
+id, class and element names can be used
+```css
+span {
+    color: red;
+}
+
+#hello-world {
+    color: red;
+}
+
+.text {
+    color: red;
+}
+```
+
+### Combinator selectors
+
+### Pseudo-class selectors
+
+### Attribute selectors
