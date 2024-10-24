@@ -11,22 +11,38 @@
             height: 80vh;
         }
 
-        .container div {
-            width: attr(data-size);
-            height: attr(data-size);
+        .box {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #margin-box {
+            background-color: gray;
+        }
+
+        #border-box {
+            background-color: darkgray;
+        }
+
+        #padding-box {
+            background-color: lightgray;
+        }
+
+        #content-box {
+            border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
     <main class="container">
-        <div id="margin-box">
+        <div id="margin-box" class="box" data-size="100px">
             margin
-            <div id="border-box">
+            <div id="border-box" class="box">
                 border
-                <div id="padding-box">
+                <div id="padding-box" class="box">
                     padding
-                    <div> Content </div>
+                    <div id="content-box" class="box"> Content </div>
                 </div>
             </div>
         </div>
@@ -34,11 +50,11 @@
 
     <div>
         <label for="margin">Margin</label>
-        <input min="0" max="100" id="margin" type="range" />
+        <input min="5" max="100" id="margin" type="range" />
         <label for="border">Border</label>
-        <input min="0" max="100" id="border" type="range" />
+        <input min="5" max="100" id="border" type="range" />
         <label for="padding">Padding</label>
-        <input min="0" max="100" id="padding" type="range" />
+        <input min="5" max="100" id="padding" type="range" />
     </div>
     <script>
         const marginInput = document.getElementById("margin");
@@ -49,13 +65,19 @@
         const paddingBox = document.getElementById("padding-box");
         const borderBox = document.getElementById("border-box");
 
-        let marginV = 0;
-        let borderV = 0;
-        let paddingV = 0;
+        marginInput.addEventListener("change", (e) => {
+            marginBox.style.padding = `${e.target.value}px`;
+            borderBox.style.margin = `${e.target.value}px`;
+        });
 
-        marginInput.addEventListener("change", (e) => marginV = Number(e.target.value));
-        paddingInput.addEventListener("change", (e) => paddingV = Number(e.target.value));
-        borderInput.addEventListener("change", (e) => borderV = Number(e.target.value));
+        paddingInput.addEventListener("change", (e) => {
+            paddingBox.style.padding = `${e.target.value}px`;
+        });
+
+        borderInput.addEventListener("change", (e) => {
+            borderBox.style.padding = `${e.target.value}px`;
+            paddingBox.style.margin = `${e.target.value}px`;
+        });
     </script>
 </body>
 
