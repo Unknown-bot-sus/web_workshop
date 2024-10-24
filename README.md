@@ -228,3 +228,34 @@ div > span {
 ## Position
 ## Layout
 
+# Javascript
+## Defining variables
+```javascript
+let variable = value
+const variable = value
+```
+
+## Datatypes
+Javascript has 8 datatypes.
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+## Functions
+Javascript has two syntax for defiing functions. The only difference is "this" and "arguments". [Explore](https://javascript.info/arrow-functions)
+```javascript
+const fn = () => {}
+function fn() {
+
+}
+
+const add = (a, b) => a + b;
+function add(a, b) {
+    return a + b;
+}
+```
