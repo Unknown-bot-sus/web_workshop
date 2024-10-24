@@ -259,3 +259,29 @@ function add(a, b) {
     return a + b;
 }
 ```
+
+## JSON
+JSON stands for Javascript Object Notation.
+
+Example
+```json
+{
+    "name": "Thar Lin",
+    "age": "3",
+}
+```
+
+```javascript
+const person = {
+    name: "Thar Lin",
+    age: 3
+}
+
+// syntax for converting into JSON
+const personJson = JSON.stringify(person)
+
+console.log(personJson);
+
+// syntaxx for converting into object
+console.log(JSON.parse(personJson))
+```
