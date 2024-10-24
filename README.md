@@ -81,7 +81,7 @@ Form elements
     <option></option>
     <option></option>
 </select>
-<label>
+<label></label>
 <button></button>
 ```
 
@@ -103,4 +103,46 @@ code ./lab1.html
 Can you strucutre a personal card in html using div and spans? Make sure it includes image, name, university, course, skills, email, location
 
 # CSS 
-Css stand for
+Css stand for Cascading Style Sheets. It is used to format the layout and style the webpage.
+
+## CSS can be used in 3 ways:
+- Inline
+```html
+<span style="color: red;">Hello world<span>
+```
+- Internal 
+```html
+<html>
+    <head>
+        <style> 
+            span {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <span>Hello world</span>
+    </body>
+</html>
+```
+- External
+
+index.html
+```html
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <span>Hello world</span>
+    </body>
+</html>
+```
+style.css
+
+```css
+span {
+    color: red;
+}
+```
+
