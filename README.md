@@ -174,6 +174,38 @@ span {
 
 ### Combinator selectors
 
+```css
+div span {
+    color: red;
+}
+
+div > span {
+    color: red;
+}
+```
+
 ### Pseudo-class selectors
 
+```css
+.btn {
+    background: white;
+    text: black;
+}
+
+.btn:hover {
+    background: black;
+    text: white;
+}
+```
+
 ### Attribute selectors
+
+```css
+.btn[type="submit"] {
+
+}
+
+.btn {
+    
+}
+```
