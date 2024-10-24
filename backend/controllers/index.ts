@@ -1,1 +1,1 @@
-export { createTodo, getTodos, getTodo, updateTodo, deleteTodo } from "./todos"
+export { createTodo, getTodos, updateTodo, deleteTodo } from "./todos";

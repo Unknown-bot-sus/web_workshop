@@ -83,11 +83,6 @@ Generic elements
 Form elements
 <form></form>
 <input />
-<select>
-  <option></option>
-  <option></option>
-  <option></option>
-</select>
 <label></label>
 <button></button>
 <table>
@@ -245,6 +240,8 @@ div > span {
 ```
 
 ## Box model
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.
 
 ## Position
 
