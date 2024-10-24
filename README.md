@@ -169,7 +169,6 @@ A CSS selector selects the HTML element(s) you want to style.
 - [Pseudo-elements selectors](https://www.w3schools.com/css/css_pseudo_elements.asp) (select and style a part of an element)
 - [Attribute selectors](#attribute-selectors) (select elements based on an attribute or attribute value)
 
-
 ### Simple selectors
 id, class and element names can be used
 ```css
@@ -251,7 +250,6 @@ Javascript has two syntax for defiing functions. The only difference is "this" a
 ```javascript
 const fn = () => {}
 function fn() {
-
 }
 
 const add = (a, b) => a + b;
@@ -284,4 +282,37 @@ console.log(personJson);
 
 // syntaxx for converting into object
 console.log(JSON.parse(personJson))
+```
+
+## Storing data in browsers
+### Local Storage
+The localStorage object provides access to a local storage for a particular Web Site. The data is stored with no expiration date, and will not be deleted when the browser is closed.
+
+```javascript
+const person = {
+    name: "Thar Lin",
+    age: 21
+}
+
+localStorage.setItem("user", JSON.stringify(person));
+console.log(localStorage.getItem("user"));
+```
+
+### Session Storage
+The sessionStorage object is identical to the localStorage object. The difference is that the sessionStorage object stores data for one session. The data is deleted when the browser is closed.
+```javascript
+const person = {
+    name: "Thar Lin",
+    age: 21
+}
+
+sessionStorage.setItem("user", JSON.stringify(person));
+console.log(sessionStorage.getItem("user"));
+```
+
+## Fetching data
+```javascript
+fetch({
+    
+})
 ```
