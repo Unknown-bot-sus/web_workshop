@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 80vh;
+        }
+
+        .container div {
+            width: attr(data-size);
+            height: attr(data-size);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div id="margin-box">
+            margin
+            <div id="border-box">
+                border
+                <div id="padding-box">
+                    padding
+                    <div> Content </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div>
+        <label for="margin">Margin</label>
+        <input min="0" max="100" id="margin" type="range" />
+        <label for="border">Border</label>
+        <input min="0" max="100" id="border" type="range" />
+        <label for="padding">Padding</label>
+        <input min="0" max="100" id="padding" type="range" />
+    </div>
+    <script>
+        const marginInput = document.getElementById("margin");
+        const paddingInput = document.getElementById("padding");
+        const borderInput = document.getElementById("border");
+
+        const marginBox = document.getElementById("margin-box");
+        const paddingBox = document.getElementById("padding-box");
+        const borderBox = document.getElementById("border-box");
+
+        let marginV = 0;
+        let borderV = 0;
+        let paddingV = 0;
+
+        marginInput.addEventListener("change", (e) => marginV = Number(e.target.value));
+        paddingInput.addEventListener("change", (e) => paddingV = Number(e.target.value));
+        borderInput.addEventListener("change", (e) => borderV = Number(e.target.value));
+    </script>
+</body>
+
+</html>

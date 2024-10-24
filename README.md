@@ -12,7 +12,7 @@
 
 ## What we will build today
 - Personal card
-- Survey form
+- Todo list
 
 ## Useful links
 - [w3school](https://www.w3schools.com/html/default.asp)
@@ -312,7 +312,22 @@ console.log(sessionStorage.getItem("user"));
 
 ## Fetching data
 ```javascript
-fetch({
-    
-})
+async function getData() {
+    const url = "http://localhost:3000/people.json";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        const json = await response.json();
+        console.log(json);
+    } catch (error) {
+        console.error(error.message);
+    }
+}
 ```
+
+## html elements
+
+## events
