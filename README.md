@@ -245,7 +245,49 @@ The CSS box model is essentially a box that wraps around every HTML element. It 
 
 ## Position
 
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+- [static](#static)
+- [relative](#relative)
+- [fixed](#fixed)
+- [absolute](#absolute)
+- [sticky](#sticky)
+
+### Static
+
+This is the default position value of html elements. Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+### Relative
+
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+### Fixed
+
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+### Absolute
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+### Sticky
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
 ## Layout
+
+The display property is used to specify how an element is shown on a web page.
+
+Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline.
+
+The display property is used to change the default display behavior of HTML elements.
 
 ## Lab 2
 
