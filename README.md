@@ -30,11 +30,7 @@ Other markup languages are
 ## Syntax of html element
 
 ```html
-<openTag attribute="value"
-  >content<closeTag>
-    Example
-    <span title="tool tip">Hello world</span></closeTag
-  ></openTag
+<openTag attribute="value">content<closeTag>Example<span title="tool tip">Hello world</span></closeTag></openTag
 >
 ```
 

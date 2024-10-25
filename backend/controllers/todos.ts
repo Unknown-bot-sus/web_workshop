@@ -3,6 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import { prisma } from "../database";
 
 export const createTodo = async (req: Request, res: Response) => {
+  console.log(req.body);
   const todo = await prisma.todo.create({
     data: req.body,
   });
