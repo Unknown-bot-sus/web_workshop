@@ -425,6 +425,5 @@ async function getData() {
 }
 ```
 
-## html elements
-
-## events
+## DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page. DOM be used to mainpulate the html of the webpage
